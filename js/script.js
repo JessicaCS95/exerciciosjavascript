@@ -7,20 +7,37 @@ console.log(nome);
 
 const sim = true;
 const nao = false;
-console.log(sim)
-console.log(nao)
+console.log(sim);
+console.log(nao);
 
 // Dadas as operações matemáticas abaixo, calcule-as utilizando Javascript, para cada número utilizar uma variável
 
 //2 + (3 x 4) - 5
 
+console.log(2+(3*4)-5);
+
 //2 x (3 + 4) - 5 ÷ 5
+console.log(2*(3+4) -5 / 5);
 
 //{[(10 - 4) / 2] * 3} + 1
+console.log((((10-4)/2)*3)+1);
 
 //3 * 4 / 2 + 1 - 5
+console.log(((3*4)/2)+1-5);
 
 //Crie um poema utilizando interpolação para inserir variáveis em diferentes linhas
+let sentimento = "amor";
+let cor = "azul";
+let objeto = "estrela";
+let emoção = "feliz";
+
+let poema = `O ${sentimento} no céu brilha com uma cor ${cor},
+Como uma ${objeto} que nunca se apaga, sempre a resplandecer.
+Com o brilho da noite, eu me sinto ${emoção},
+Pois o ${sentimento} é a luz que me faz viver.`;
+
+console.log(poema);
+
 
 //Crie um programa que exiba a data atual formatada utilizando interpolação
 
