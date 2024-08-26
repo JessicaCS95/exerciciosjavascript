@@ -26,24 +26,26 @@ console.log((((10-4)/2)*3)+1);
 console.log(((3*4)/2)+1-5);
 
 //Crie um poema utilizando interpolação para inserir variáveis em diferentes linhas
-let sentimento = "amor";
-let cor = "azul";
-let objeto = "estrela";
-let emoção = "feliz";
-
-let poema = `O ${sentimento} no céu brilha com uma cor ${cor},
-Como uma ${objeto} que nunca se apaga, sempre a resplandecer.
-Com o brilho da noite, eu me sinto ${emoção},
-Pois o ${sentimento} é a luz que me faz viver.`;
-
-console.log(poema);
-
 
 //Crie um programa que exiba a data atual formatada utilizando interpolação
+const dia = 26;
+const mes = 8;
+const ano = 2024;
+
+console.log(`A data atual é: ${dia}/${mes}/${ano}`);
 
 //Crie um programa que calcule a área de um retângulo, solicitando a base e a altura ao usuário. Exiba o resultado utilizando interpolação
 
+var base= Number (window.prompt ('Digite em centímetros o valor da base do triângulo:'))
+var altura = Number(window.prompt ('Digite em centímetros o valor da altura do triângulo:'))
+var area = base*altura
+window.alert(`Um retângulo com base ${base}cm e altura ${altura}cm possui uma área igual a ${area} cm\u00B2`)
+
 //Crie uma condicional para verificar se o caractere é uma vogal
+
+
+
+
 
 //Crie uma condicional para verificar se o número é par ou é impar
 
