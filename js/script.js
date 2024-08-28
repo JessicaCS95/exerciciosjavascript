@@ -1,7 +1,11 @@
 // Crie uma variável para armazenar seu nome completo
 
-var nome = "Jessica Campos de Souza"
-console.log(nome);
+
+function exibir() {
+    var nome = document.getElementById("nome").value
+    alert(`O seu nome completo é ${nome}.`)
+}
+
 
 // Crie uma variável para armazenar se você gosta de programar (true ou false)
 
@@ -9,6 +13,7 @@ const sim = true;
 const nao = false;
 console.log(sim);
 console.log(nao);
+
 
 // Dadas as operações matemáticas abaixo, calcule-as utilizando Javascript, para cada número utilizar uma variável
 
@@ -55,11 +60,22 @@ ${numero}`);
 
 
 //Crie um programa que exiba a data atual formatada utilizando interpolação
-const dia = 26;
-const mes = 8;
-const ano = 2024;
 
-console.log(`A data atual é: ${dia}/${mes}/${ano}`);
+//const dia = 26;
+//const mes = 8;
+//const ano = 2024;
+
+//console.log(`A data atual é: ${dia}/${mes}/${ano}`);
+//Inicialmente fiz do modo que está acima, mas posteriormente pesquisei um modo em que a data atualize automaticamente, como segue abaixo.
+
+const data = new Date()
+const dia = String(data.getDate()).padStart(2, '0');
+const mes = String(data.getMonth() + 1).padStart(2,'0');
+const ano = data.getFullYear();
+const dataAtual = `${dia}/${mes}/${ano}`;
+console.log(dataAtual);
+
+
 
 //Crie um programa que calcule a área de um retângulo, solicitando a base e a altura ao usuário. Exiba o resultado utilizando interpolação
 
@@ -107,7 +123,7 @@ function verificar2() {
     var b = Number(ladoB);
     var c = Number(ladoC);
     
-    //&& operador lógico - &&retorna verdadeiro caso ambos operando sejam verdadeiros, caso contrário, retorna falso.
+    //&& operador lógico - && retorna verdadeiro caso ambos operando sejam verdadeiros, caso contrário, retorna falso.
     if (a === b && b === c) {
         alert("O triângulo é Equilátero.");
     } else if (a === b || a === c || b === c) {
@@ -126,14 +142,19 @@ function verificar3(){
 
     var n1 = Number(nota1)
     var n2 = Number(nota2)
-    var media = 7
+    var media = (n1+n2)/2
+    var notaDeCorte=7
+    var notaMinima=5
 
-    if ((n1+n2)/2 >= media ){
+    if (media>=notaDeCorte ){
         alert("O Aluno está aprovado.");
     }
-    else{
-        alert("O Aluno está reprovado.");
+    else if (media < notaDeCorte && media >= notaMinima){
+        alert("O Aluno está em recuperação.");
     }
+    else {
+        alert("O Aluno está reprovado.")
+    } 
 } 
 
 
