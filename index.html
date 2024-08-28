@@ -4,13 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="./js/script.js" defer></script>
 </head>
 <body>
+
+    <h1 class="titulo">EXERCÍCIOS JAVASCRIPT</h1>
     <!-- Crie uma variável para armazenar seu nome completo -->
-    <h1>Nome Completo</h1>
+    <h1>Digite seu nome completo:</h1>
     <input type="text" id="nome">
     <button onclick="exibir()">Salvar</button>
+
+    <!-- Crie uma variável para armazenar se você gosta de programar (true ou false) -->
+
+    <h1>Você gosta de programar?</h1>
+    <input type="text" id="gostaDeProgramar" placeholder="Digite SIM ou NAO">
+    <button onclick="verificarResposta()">Verificar</button>
+
+    <!-- Dadas as operações matemáticas abaixo, calcule-as utilizando Javascript, para cada número utilizar uma variável -->
+    <h1>Operações Matemáticas:</h1>
+    <p><strong id="expressao1">2 + (3 x 4) - 5</strong> <button onclick="expressao1()">Calcular</button></p>
+    <p><strong id="expressao2">2 x (3 + 4) - 5 ÷ 5</strong> <button onclick="expressao2()">Calcular</button></p>
+    <p><strong id="expressao3">{[(10 - 4) / 2] x 3} + 1</strong> <button onclick="expressao3()">Calcular</button></p>
+    <p><strong id="expressao4">3 x 4 / 2 + 1 - 5</strong> <button onclick="expressao4()">Calcular</button></p>
+    
+    
+    <!-- Crie um poema utilizando interpolação para inserir variáveis em diferentes linhas -->
+
+    <h1>Poema Interpolado</h1>
+    <h2 id="poema"></h2>
+    <p id="poema2"></p>
+    <p id="poema3"></p>
+    <p id="poema4"></p>
+    <p id="poema5"></p>
+    <p id="poema6"></p>
+    <p id="poema7"></p>
+    <p id="poema8"></p>
+    <p id="poema9"></p>
+
+    <!-- Crie um programa que exiba a data atual formatada utilizando interpolação -->
+    <h1>Data Atual:</h1>
+    <p id = "dataAtual"></p>
+
+    <!-- Crie um programa que calcule a área de um retângulo, solicitando a base e a altura ao usuário. Exiba o resultado utilizando interpolação -->
+   <h1>Calcule a área de um retângulo:</h1>
+   <label for="baseretangulo">Digite a medida da base do retângulo:</label>
+   <input type="number" id="baseretangulo">
+   <label for="alturaretangulo">Digite a medida da altura do retângulo:</label>
+   <input type="number" id="alturaretangulo">
+   <button onclick="calcular()">Calcular</button>
+
+   <!-- Crie uma condicional para verificar se o caractere é uma vogal -->
+   <h1>Digite uma letra:</h1>
+   <input type="text" id="vogal">
+   <button onclick="verificar5()">Verificar</button>
 
 
     <!-- Crie uma condicional para verificar se o número é par ou é impar -->
@@ -31,15 +78,46 @@
     
 
    <!-- Calcule a média do aluno e verifique se ele foi aprovado -->
-   <h1>Média do Aluno</h1>
+   <h1>Calcule a média de um aluno:</h1>
    <label for="text">Digite a nota geral do primeiro semestre:</label>
    <input type="number" id="nota1">
    <label for="text">Digite a nota geral do segundo semestre:</label>
    <input type="number" id="nota2">
    <button onclick="verificar3()">Calcular</button>
+
+   <!-- Crie uma variável para armazenar um array com seus hobbies -->
+
+   <h1>Hobbies em Array</h1>
+   <p id="hobbies"></p>
+
+   <!-- Crie um array chamado frutas com os nomes de 5 frutas diferentes.
+   Acesse e imprima o segundo elemento do array.
+   Adicione mais duas frutas ao final do array.
+   Remova a primeira fruta do array. -->
+
+   <h1>Frutas (Array)</h1>
+   <h2>Array com 5 frutas:</h2>
+   <p id="5frutas"></p>
+   <h2>Segundo elemento:</h2>
+   <p id="fruta2"></p>
+   <h2>Adição de duas frutas:</h2>
+   <p id="+2frutas"></p>
+   <h2>Remover primeira fruta:</h2>
+   <p id="-1fruta"></p>
+
+   <!-- Crie uma variável e atribua um valor de qualquer tipo (número, string, booleano).
+   Utilize o operador typeof para verificar o tipo da variável.
+   Imprima o tipo da variável no console. -->
+
+   <h1>Tipo de Variável:</h1>
+
+   <button onclick="verificaVerdadeiro()">Verdadeiro</button>
+
+   <button onclick="verificaFalso()">Falso</button>
+
     
     <!-- Crie um programa que simule uma calculadora simples. O usuário deve inserir dois números e um operador (+, -, *, /). Utilize a estrutura switch para realizar a operação correspondente e exibir o resultado.  -->
-    <h1>Calculadora</h1>
+    <h1>Calculadora:</h1>
     <label for="num1">Primeiro Número:</label>
     <input type="number" id="num1">
     <label for="operador">Operação (+, -, *, /):</label>
