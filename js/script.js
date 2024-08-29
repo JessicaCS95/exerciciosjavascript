@@ -12,8 +12,7 @@ function exibir() {
 
 function verificarResposta() {
   const resposta = document.getElementById("gostaDeProgramar").value.toUpperCase();
-  const resultado = document.getElementById("resultado");
-
+  
   if (resposta === "SIM") {
     gostaDeProgramar = true; 
         alert(`${gostaDeProgramar}, você gosta de programar!`);
@@ -21,7 +20,7 @@ function verificarResposta() {
     gostaDeProgramar = false; 
     alert(`${gostaDeProgramar}, você não gosta de programar!`);
   } else {
-    resultado.textContent = "Por favor, digite SIM ou NAO.";
+    alert ("Por favor, digite SIM ou NAO.");
   }
 }
 
@@ -266,3 +265,4 @@ function verificar4() {
             alert('Operador inválido');
     }
 }
+
